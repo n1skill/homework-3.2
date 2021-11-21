@@ -1,0 +1,14 @@
+flat_number = int(input())
+
+floor = ((flat_number + 3) // 4)
+
+if flat_number <= 36:
+    print("Подъезд №1, этаж:", floor)
+elif 37 <= flat_number <= 72:
+    print("Подъезд №2, этаж:", floor - 9)
+elif 73 <= flat_number <= 108:
+    print("Подъезд №3, этаж:", floor - 18)
+elif 109 <= flat_number <= 144:
+    print("Подъезд №4, этаж:", floor - 27)
+else:
+    print("Такой квартиры нет в этом доме!")
